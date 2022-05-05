@@ -42,8 +42,6 @@ for (var i = 0; i < eventidaciclare.length; i++) {
         }
       ];
 
-      rows = json2csv(info_evento, { header: false });
-
       const write = async (fileName, fieldNames2, info_evento) => {
         // output file in the same folder
         const filename = path.join(__dirname, 'CSV', `${fileName}`);
